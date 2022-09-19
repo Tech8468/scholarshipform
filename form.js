@@ -70,11 +70,11 @@ let gradePoint=0
 
 
 applyBtn.addEventListener("click", function(){
+    validateForm()
     
-    validateform()
 })
 
-function validateform(){
+function validateForm(){
     if(fName.value==""){
         fnameError.innerHTML="This field is required";
     }else{
@@ -170,109 +170,110 @@ function validateform(){
 
 }
 
-function acceptValues(){
-        todayDate = new Date()
-        dob = new Date(dateofBirth.value)
-        age = todayDate.getFullYear()-dob.getFullYear()
+// function acceptValues(){
+//         todayDate = new Date()
+//         dob = new Date(dateofBirth.value)
+//         age = todayDate.getFullYear()-dob.getFullYear()
 
-            ageprocess()
-}
-function ageprocess(){
+//             ageprocess()
+// }
+// function ageprocess(){
 
-    if(age >= 18 && age <= 24){
-        agePoint += 100;
-    }else if(age >= 25 && age <=30){
-        agePoint += 80
-    }else if(age >= 31 && age <=35){
-        agePoint += 50
+//     if(age >= 18 && age <= 24){
+//         agePoint += 100;
+//     }else if(age >= 25 && age <=30){
+//         agePoint += 80
+//     }else if(age >= 31 && age <=35){
+//         agePoint += 50
 
-    }else if(age >= 36 && age <=40){
-        agePoint += 30
+//     }else if(age >= 36 && age <=40){
+//         agePoint += 30
 
-    }else if(age >= 41){
-        agePoint += 10
+//     }else if(age >= 41){
+//         agePoint += 10
 
-    }else{
-        agePoint += 0
-    }
-    countryprocess()
-}
-function countryprocess(){
-    if(region.value=="1"){
-        countryPoint += 50
-    }else if(region.value=="2"){
-        countryPoint += 40
-    }else if(region.value=="3"){
-        countryPoint += 30
-    }else if(region.value=="4"){
-        countryPoint += 20
-    }else if(region.value=="5"){
-        countryPoint += 10
-    }else {
-        countryPoint += 0
-    }
-    subjectProcess()
-}
-function subjectProcess(){
-        subjectScore1 = Number(englishScore.value);
-        console.log(subjectScore1);
+//     }else{
+        
+//     }
+//     countryProcess()
+// }
+// function countryProcess(){
+//     if(region.value=="1"){
+//         countryPoint += 50
+//     }else if(region.value=="2"){
+//         countryPoint += 40
+//     }else if(region.value=="3"){
+//         countryPoint += 30
+//     }else if(region.value=="4"){
+//         countryPoint += 20
+//     }else if(region.value=="5"){
+//         countryPoint += 10
+//     }else {
+//         countryPoint += 0
+//     }
+//     subjectProcess()
+// }
+// function subjectProcess(){
+//         subjectScore1 = Number(englishScore.value);
+//         console.log(subjectScore1);
     
-        subjectScore2 = Number(mathsScore.value);
-        console.log(subjectScore2);
+//         subjectScore2 = Number(mathsScore.value);
+//         console.log(subjectScore2);
     
-        subjectScore3 = Number(geoScore.value)
-        console.log(subjectScore3);
+//         subjectScore3 = Number(geoScore.value)
+//         console.log(subjectScore3);
     
-        subjectScore4 = Number(physicsScore.value)
-        console.log(subjectScore4);
+//         subjectScore4 = Number(physicsScore.value)
+//         console.log(subjectScore4);
     
-        subjectScore5 = Number(chemScore.value)
-        console.log(subjectScore5);
+//         subjectScore5 = Number(chemScore.value)
+//         console.log(subjectScore5);
     
-        subjectScore6 = Number(appartScore.value)
-        console.log(subjectScore6);
+//         subjectScore6 = Number(appartScore.value)
+//         console.log(subjectScore6);
     
-        subjectScore7 = Number(ecoScore.value)
-        console.log(subjectScore7)
+//         subjectScore7 = Number(ecoScore.value)
+//         console.log(subjectScore7)
     
-        subjectScore8 = Number(biologyScore.value)
-        console.log(subjectScore8)
+//         subjectScore8 = Number(biologyScore.value)
+//         console.log(subjectScore8)
     
-        totalScore = subjectScore1 + subjectScore2 + subjectScore3 + subjectScore4 + subjectScore5 + subjectScore6 + subjectScore7 + subjectScore8;
-        avScore = totalScore / 8
-        avScore = parseInt(avScore, 10)
+//         totalScore = subjectScore1 + subjectScore2 + subjectScore3 + subjectScore4 + subjectScore5 + subjectScore6 + subjectScore7 + subjectScore8;
+//         avScore = totalScore / 8
+//         avScore = parseInt(avScore, 10)
 
-        if(avScore >= 90 && avScore <= 100){
-            gradePoint += 150
-        }else if(avScore.value >= 85 && avScore.value <= 89){
-            gradePoint += 120
-        }else if(avScore.value >= 75 && avScore.value <= 84){
-            gradePoint += 100
-        }else if(avScore.value >= 65 && avScore.value <= 74){
-            gradePoint += 80
-        }else if(avScore.value >= 50 && avScore.value <= 59){
-            gradePoint += 50
-        }else if(avScore.value >= 40 && avScore.value <= 49){
-            gradePoint += 20
-        }else{
-            gradeoint += 0
-        }
-        calculatePoint()
-}
+//         if(avScore >= 90 && avScore <= 100){
+//             gradePoint += 150
+//         }else if(avScore.value >= 85 && avScore.value <= 89){
+//             gradePoint += 120
+//         }else if(avScore.value >= 75 && avScore.value <= 84){
+//             gradePoint += 100
+//         }else if(avScore.value >= 65 && avScore.value <= 74){
+//             gradePoint += 80
+//         }else if(avScore.value >= 50 && avScore.value <= 59){
+//             gradePoint += 50
+//         }else if(avScore.value >= 40 && avScore.value <= 49){
+//             gradePoint += 20
+//         }else{
+//             gradeoint += 0
+//         }
+//         calculatePoint()
+// }
 
-function calculatePoint(){
+// function calculatePoint(){
 
-        totalPoint = agePoint + countryPoint + gradePoint
-        // messageT.innerHTML = totalPoint
-        if (totalPoint >= 180) {
-            message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
-            messageT.innerHTML = message
-        }else {
-            message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
-            messageT.innerHTML = message
-        }
+//         totalPoint = agePoint + countryPoint + gradePoint
+//         console.log(totalPoint)
+//         // messageT.innerHTML = totalPoint
+//         if (totalPoint >= 180) {
+//             message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
+//             messageT.innerHTML = message
+//         }else {
+//             message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
+//             messageT.innerHTML = message
+//         }
             
     
-}
+// }
 
 
