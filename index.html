@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <h1>Scholarship Assessment Form</h1>
+            <p>The information provided on this form will be used by the High School Scholarship Committee to select
+                recipients for scholarships. It is important that you give complete details as required.</p>
+        </div>
+        <div class="row2">
+            <h1 class="header1">Personal information</h1>
+        </div>
+        <div class="row3a">
+            <form>
+                <label id="firstName">First Name</label>
+                <input class="block1" type="text" id="fName" placeholder="Enter First Name"><br>
+                <label id="fnameError"></label><br><br>
+
+                <label id="secondName">Last Name</label>
+                <input type="text" id="sName" placeholder="Enter Second Name"><br>
+                <label id="snameError"></label><br><br>
+
+                <label id="otherName">Other Name</label>
+                <input class="block6" type="text" id="oName" placeholder="Enter Other Name"><br>
+                <label id="othernameError"></label><br><br>
+
+                <label id="doB">Date of Birth</label>
+                <input class="block2" type="date" id="dateofBirth" placeholder="Enter Date of Birth"><br>
+                <label id="dobError"></label><br><br>
+
+                <label id="genDer">Gender:</label>
+                <select class="block4" name="sex1" id="sX">
+                    <option value="">select option</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select><br>
+                <label id="genderError"></label><br><br>
+
+                <label id="eMail">Email add</label>
+                <input class="block3" type="text" id="eMailbox" placeholder="Enter Email"><br>
+                <label id="emailError"></label><br><br>
+
+                <label id="phoneNum">Mobile No.</label>
+                <input class="block5" type="number" id="pNum" placeholder="Enter Mobile number"><br>
+                <label id="pnumError"></label><br><br>
+
+                <label id="altmNum">Alt. Mobile No.</label>
+                <input type="number" id="altNum" placeholder="Enter Mobile number"><br>
+                <label id="altnumError"></label><br>
+            </form>
+        </div>
+        <div class="row3">
+            <div class="col1">
+                <form id="form">
+                    <label id="firstName">First Name</label>
+                    <input class="block1" type="text" id="fName" placeholder="Enter First Name"><br>
+                    <label id="fnameError"></label><br><br><br>
+
+                    <label id="doB">Date of Birth</label>
+                    <input class="block2" type="date" id="dateofBirth" placeholder="Enter Date of Birth"><br>
+                    <label id="dobError"></label><br><br><br>
+
+                    <label id="eMail">Email add</label>
+                    <input class="block3" type="text" id="eMailbox" placeholder="Enter Email"><br>
+                    <label id="emailError"></label>
+                </form>
+            </div>
+            <div class="col2">
+                <form action="form4">
+                    <label id="secondName">Last Name</label>
+                    <input type="text" id="sName" placeholder="Enter Second Name"><br>
+                    <label id="snameError"></label><br><br><br>
+
+                    <label id="genDer">Gender:</label>
+                    <select class="block4" name="sex1" id="sX">
+                        <option value="">select option</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select><br>
+                    <label id="genderError"></label><br><br><br>
+
+                    <label id="phoneNum">Mobile No.</label>
+                    <input class="block5" type="number" id="pNum" placeholder="Enter Mobile number"><br>
+                    <label id="pnumError"></label>
+                </form>
+            </div>
+            <div class="col3">
+                <form action="form5">
+                    <label id="otherName">Other Name</label>
+                    <input class="block6" type="text" id="oName" placeholder="Enter Other Name"><br>
+                    <label id="othernameError"></label><br><br><br><br><br><br><br><br>
+
+                    <label id="altmNum">Alt. Mobile No.</label>
+                    <input type="number" id="altNum" placeholder="Enter Mobile number"><br>
+                    <label id="altnumError"></label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="row4a">
+            <h1 class="header2">Applicant Location</h1>
+        </div>
+        <div class="row4b">
+            <form id="form2">
+                <label id="cntLocal">Region</label>
+                <select name="countries" id="region">
+                    <option value="">Select Continent</option>
+                    <option value="1">Africa</option>
+                    <option value="2">Asia</option>
+                    <option value="3">South America</option>
+                    <option value="4">North America</option>
+                    <option value="5">Rest of the world</option>
+                </select><br>
+                <label id="regionError"></label><br><br>
+                <label id="country">Country</label>
+                <select name="countries" id="countries">
+                    <option value=""></option>
+                    <option value="1">Nigeria</option>
+                    <option value="2">Ghana</option>
+                    <option value="3">Kenya</option>
+                    <option value="4">South Africa</option>
+                    <option value="5">Japan</option>
+                    <option value="6">China</option>
+                    <option value="7">Saudi-Arabia</option>
+                    <option value="8">Qatar</option>
+                    <option value="9">Brazil</option>
+                    <option value="10">Uraguay</option>
+                    <option value="11">Agentina</option>
+                    <option value="12">Peru</option>
+                    <option value="13">USA</option>
+                    <option value="14">Canada</option>
+                    <option value="15">Mexico</option>
+                    <option value="16">Costa Rica</option>
+                    <option value="17">Europe</option>
+                    <option value="18">Australia</option>
+
+                </select><br>
+                <label id="countriesError"></label><br>
+
+            </form>
+        </div>
+
+        <div class="row4">
+            <h1 class="header2">Applicant Location</h1>
+            <form id="form2">
+                <label id="cntLocal">Region</label><br>
+                <select class="align1" name="countries" id="region">
+                    <option value="">Select Continent</option>
+                    <option value="1">Africa</option>
+                    <option value="2">Asia</option>
+                    <option value="3">South America</option>
+                    <option value="4">North America</option>
+                    <option value="5">Rest of the world</option>
+                </select><br>
+                <label id="regionError"></label><br>
+                <label id="country">Country</label><br>
+                <select class="align2" name="countries" id="countries">
+                    <option value=""></option>
+                    <option value="1">Nigeria</option>
+                    <option value="2">Ghana</option>
+                    <option value="3">Kenya</option>
+                    <option value="4">South Africa</option>
+                    <option value="5">Japan</option>
+                    <option value="6">China</option>
+                    <option value="7">Saudi-Arabia</option>
+                    <option value="8">Qatar</option>
+                    <option value="9">Brazil</option>
+                    <option value="10">Uraguay</option>
+                    <option value="11">Agentina</option>
+                    <option value="12">Peru</option>
+                    <option value="13">USA</option>
+                    <option value="14">Canada</option>
+                    <option value="15">Mexico</option>
+                    <option value="16">Costa Rica</option>
+                    <option value="17">Europe</option>
+                    <option value="18">Australia</option>
+
+                </select><br>
+                <label id="countriesError"></label>
+
+            </form>
+        </div>
+        <div class="row5">
+            <h1 class="header3">Subjects/Grades</h1>
+        </div>
+        <div class="row6a">
+            <form action="">
+                <label id="maths">Mathematics</label>
+                <input class="block7" type="number" id="mathsScore" placeholder="Enter Score" value=""><br>
+                <label id="comPulsory2">Compulsory Subject</label>
+                <label id="mathsError"></label><br><br>
+
+                <label id="english">English</label>
+                <input class="block8" type="number" id="englishScore" placeholder="Enter Score" value=""><br>
+                <label id="comPulsory2">Compulsory Subject</label>
+                <label id="englishError"></label><br><br>
+
+                <label id="chemistry">Chemistry</label>
+                <input class="block9" type="number" id="chemScore" placeholder="Enter Score" value=""><br>
+                <label id="chemError"></label><br><br>
+
+                <label id="physics">Physics</label>
+                <input class="block10" type="number" id="physicsScore" placeholder="Enter Score" value=""><br>
+                <label id="physicsError"></label><br><br>
+
+                <label id="biology">Biology</label>
+                <input class="block11" type="number" id="biologyScore" placeholder="Enter Score" value=""><br>
+                <label id="biologyError"></label><br><br>
+
+                <label id="geography">Geography</label>
+                <input class="block12" type="number" id="geoScore" placeholder="Enter Score" value=""><br>
+                <label id="geoError"></label><br><br>
+
+                <label id="economics">Economics</label>
+                <input class="block13" type="number" id="ecoScore" placeholder="Enter Score" value=""><br>
+                <label id="ecoError"></label><br><br>
+
+                <label id="art">Applied Art</label>
+                <input class="block14" type="number" id="appartScore" placeholder="Enter Score" value=""><br>
+                <label id="appartError"></label><br>
+
+
+            </form>
+        </div>
+        <div class="row6">
+            <div class="col1">
+                <form action="form3">
+                    <label id="maths">Mathematics</label><br>
+                    <input class="block7" type="number" id="mathsScore" placeholder="Enter Score" value=""><br>
+                    <label id="comPulsory2">Compulsory Subject</label><br>
+
+                    <label id="mathsError"></label><br><br>
+
+                    <label id="english">English</label><br>
+                    <input class="block8" type="number" id="englishScore" placeholder="Enter Score" value=""><br>
+                    <label id="comPulsory2">Compulsory Subject</label><br>
+                    <label id="englishError"></label><br><br>
+                </form>
+            </div>
+            <div class="col2">
+                <form action="form4">
+                    <label id="chemistry">Chemistry</label><br>
+                    <input class="block9" type="number" id="chemScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="chemError"></label><br><br>
+
+                    <label id="physics">Physics</label><br>
+                    <input class="block10" type="number" id="physicsScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="physicsError"></label><br><br>
+                </form>
+            </div>
+            <div class="col3">
+                <form action="form5">
+                    <label id="biology">Biology</label><br>
+                    <input class="block11" type="number" id="biologyScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="biologyError"></label><br><br>
+
+                    <label id="geography">Geography</label><br>
+                    <input class="block12" type="number" id="geoScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="geoError"></label><br><br>
+                </form>
+            </div>
+            <div class="col4">
+                <form action="form6">
+                    <label id="economics">Economics</label><br>
+                    <input class="block13" type="number" id="ecoScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="ecoError"></label><br><br>
+
+                    <label id="art">Applied Art</label><br>
+                    <input class="block14" type="number" id="appartScore" placeholder="Enter Score" value=""><br>
+
+                    <label id="appartError"></label><br>
+                </form>
+            </div>
+        </div>
+        <button type="button" id="applyBtn">APPLY</button><br><br>
+        <label id="messageT"></label>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
