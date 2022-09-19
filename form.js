@@ -264,15 +264,13 @@ function subjectProcess(){
 function calculatePoint(){
 
         totalPoint = agePoint + countryPoint + gradePoint
-        console.log(totalPoint)
-        messageT.innerHTML = totalPoint
-        // if (totalPoint >= 180) {
-        //     message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
-        //     messageT.innerHTML = message
-        // }else {
-        //     message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
-        //     messageT.innerHTML = message
-        // }
+        if (totalPoint >= 180) {
+            message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
+            messageT.innerHTML = message
+        }else {
+            message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
+            messageT.innerHTML = message
+        }
             
     
 }
