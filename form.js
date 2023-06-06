@@ -166,9 +166,9 @@ function validateForm(){
     }else{
         appartError.innerHTML=""
 
-        acceptValues()
     }
 
+    acceptValues()
 }
 
 function acceptValues(){
@@ -267,9 +267,11 @@ function calculatePoint(){
         if (totalPoint >= 180) {
             message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
             messageT.innerHTML = message
+            alert(messageT.innerHTML)
         }else {
             message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
             messageT.innerHTML = message
+            alert(messageT.innerHTML)
         }
             
     
