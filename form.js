@@ -194,8 +194,10 @@ function ageprocess(){
         agePoint += 10
 
     }else{
-        
+        agePoint += 0
+        console.log(agePoint)
     }
+    console.log(agePoint)
     countryProcess()
 }
 function countryProcess(){
@@ -211,7 +213,9 @@ function countryProcess(){
         countryPoint += 10
     }else {
         countryPoint += 0
+        
     }
+    console.log(countryPoint)
     subjectProcess()
 }
 function subjectProcess(){
@@ -241,23 +245,26 @@ function subjectProcess(){
     
         totalScore = subjectScore1 + subjectScore2 + subjectScore3 + subjectScore4 + subjectScore5 + subjectScore6 + subjectScore7 + subjectScore8;
         avScore = totalScore / 8
-        avScore = parseInt(avScore, 10)
+        console.log(avScore)
+        // avScore = parseInt(avScore, 10)
 
         if(avScore >= 90 && avScore <= 100){
             gradePoint += 150
-        }else if(avScore.value >= 85 && avScore.value <= 89){
+        }else if(avScore >= 85 && avScore <= 89){
             gradePoint += 120
-        }else if(avScore.value >= 75 && avScore.value <= 84){
+        }else if(avScore >= 75 && avScore <= 84){
             gradePoint += 100
-        }else if(avScore.value >= 65 && avScore.value <= 74){
+        }else if(avScore >= 65 && avScore <= 74){
             gradePoint += 80
-        }else if(avScore.value >= 50 && avScore.value <= 59){
+        }else if(avScore >= 50 && avScore<= 59){
             gradePoint += 50
-        }else if(avScore.value >= 40 && avScore.value <= 49){
+        }else if(avScore >= 40 && avScore <= 49){
             gradePoint += 20
         }else{
-            gradeoint += 0
+            gradePoint += 0
+            
         }
+        console.log(gradePoint)
         calculatePoint()
 }
 
@@ -265,13 +272,15 @@ function calculatePoint(){
 
         totalPoint = agePoint + countryPoint + gradePoint
         if (totalPoint >= 180) {
-            message = "Congratulations! your assessment score of" + totalPoint + "qualifies you for a scolarship. Proceed with necessary documentation"
+            message = "Congratulations! "  +   fName.value  +  " your assessment score of "  +  totalPoint  +  " qualifies you for a scolarship. Proceed with necessary documentation"
             messageT.innerHTML = message
             alert(messageT.innerHTML)
+            
         }else {
-            message = " Sorry, your assesment score of" + totalPoint + "disqualifies you at this time for a scholarship. Do try again next time"
+            message = fName.value   +  " Sorry, your assesment score of "  +  totalPoint  +  " disqualifies you at this time for a scholarship. Do try again next time"
             messageT.innerHTML = message
             alert(messageT.innerHTML)
+            
         }
             
     
