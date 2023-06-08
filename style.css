@@ -71,11 +71,10 @@ body {
     width: 80%;
     height: auto;
     margin-top: 40px;
-
+    padding-bottom: 10px;
     border: 1px solid wheat;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +140,6 @@ body {
     width: 70%;
     height: auto;
     display: grid;
-    /* background-color: white; */
     margin-top: 10px;
 }
 
@@ -177,7 +175,6 @@ body {
     width: 70%;
     height: auto;
     display: grid;
-    /* background-color: white; */
     margin-top: 10px;
 }
 
@@ -235,6 +232,7 @@ body {
     color: white;
     margin-top: 10px;
     font-size: 18px;
+    text-align: center;
 }
 
 
@@ -244,6 +242,7 @@ button{
     padding: 10px;
     background-color: rgb(132, 132, 216);
     border-radius: 5px;
+    outline: none;
     border: none;
     color: wheat;
 }
@@ -257,6 +256,67 @@ button:hover{
 
 
 
+
+
+@media (max-width:1435px){
+    .main{
+       background-image: url('../images/college.jpg');
+       background-size: auto;
+       background-position: center;
+       background-repeat: no-repeat;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .container {
+       width: 80%;
+       height: auto;
+       background: transparent;
+       border: 1px solid black;
+   }
+
+   .row1 {
+       width: 80%;
+       height: 250px;
+       margin-left: 2px;
+       margin-top: 20px;
+       justify-content: center;
+
+   }
+   
+   .row1 h1 {
+       padding: 10px;
+       color: white;
+       font-size: 30px;
+       text-align: center;
+       font-weight: bold;
+       text-shadow: 1px 1px 2px black;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-family: lucida Sans;
+       border-bottom: 1px solid wheat;
+   
+   }
+   
+
+   .header{
+    text-align: center;
+   }
+
+   .row2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row2 form{
+    padding-bottom: 10px;
+}
+
+
+}
 
 
 
@@ -309,7 +369,7 @@ button:hover{
        font-size: 15px;
        text-align: center;
        font-weight: 200;
-       text-shadow: 1px 1px 2px black;
+       /* text-shadow: 1px 1px 2px black; */
        letter-spacing: 1px;
        font-family: lucida Sans;
        margin-top: 10px;
@@ -321,7 +381,8 @@ button:hover{
 
    .row2 {
     width: 80%;
-    height: 600px;
+    height: auto;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,6 +390,83 @@ button:hover{
 
 
 }
+
+
+@media (max-width: 520px){
+    .main{
+       background-image: url('../images/college.jpg');
+       background-size: auto;
+       background-position: center;
+       background-repeat: no-repeat;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .container {
+       width: 80%;
+       height: auto;
+       background: transparent;
+       border: 1px solid black;
+   }
+
+   .row1 {
+       width: 80%;
+       height: 250px;
+       padding-bottom: 30px;
+       margin-left: 2px;
+       margin-top: 20px;
+       justify-content: center;
+
+   }
+   
+   .row1 h1 {
+       padding: 10px;
+       color: white;
+       font-size: 30px;
+       text-align: center;
+       font-weight: bold;
+       text-shadow: 1px 1px 2px black;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-family: lucida Sans;
+       border-bottom: 1px solid wheat;
+   
+   }
+
+   .row1 p {
+    height: 260px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 200;
+    /* text-shadow: 1px 1px 2px black; */
+    letter-spacing: 1px;
+    font-family: lucida Sans;
+    margin-top: 10px;
+}
+
+   
+
+   .header{
+    text-align: center;
+   }
+
+   .row2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row2 form{
+    padding-bottom: 10px;
+}
+
+
+}
+
 
 @media (max-width:428px){
     .main{
@@ -377,7 +515,7 @@ button:hover{
        font-size: 15px;
        text-align: center;
        font-weight: 200;
-       text-shadow: 1px 1px 2px black;
+       /* text-shadow: 1px 1px 2px black; */
        letter-spacing: 1px;
        font-family: lucida Sans;
        margin-top: 10px;
@@ -389,7 +527,8 @@ button:hover{
 
    .row2 {
     width: 80%;
-    height: 600px;
+    height: auto;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,7 +585,7 @@ button:hover{
        font-size: 15px;
        text-align: center;
        font-weight: 200;
-       text-shadow: 1px 1px 2px black;
+       /* text-shadow: 1px 1px 2px black; */
        letter-spacing: 1px;
        font-family: lucida Sans;
        margin-top: 10px;
@@ -458,7 +597,8 @@ button:hover{
 
    .row2 {
     width: 80%;
-    height: 600px;
+    height: auto;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -482,4 +622,93 @@ button:hover{
 
 
 }
+
+
+
+@media (max-width:318px){
+    .main{
+       background-image: url('../images/college.jpg');
+       background-size: auto;
+       background-position: center;
+       background-repeat: no-repeat;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .container {
+       width: 80%;
+       height: auto;
+       background: transparent;
+       border: 1px solid black;
+   }
+
+   .row1 {
+       width: 80%;
+       height: 350px;
+       margin-left: 2px;
+       margin-top: 20px;
+       justify-content: center;
+
+   }
+   
+   .row1 h1 {
+       padding: 10px;
+       color: white;
+       font-size: 20px;
+       text-align: center;
+       font-weight: bold;
+       text-shadow: 1px 1px 2px black;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-family: lucida Sans;
+       border-bottom: 1px solid wheat;
+   
+   }
+   
+   .row1 p {
+       height: 260px;
+       padding: 10px;
+       color: white;
+       font-size: 15px;
+       text-align: center;
+       font-weight: 200;
+       /* text-shadow: 1px 1px 2px black; */
+       letter-spacing: 1px;
+       font-family: lucida Sans;
+       margin-top: 10px;
+   }
+
+   .header1{
+    text-align: center;
+    font-size: 15px;
+   }
+
+   .row2 {
+    width: 80%;
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row4 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+
+}
+
 

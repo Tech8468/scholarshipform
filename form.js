@@ -272,12 +272,12 @@ function calculatePoint(){
 
         totalPoint = agePoint + countryPoint + gradePoint
         if (totalPoint >= 180) {
-            message = "Congratulations! "  +   fName.value  +  " your assessment score of "  +  totalPoint  +  " qualifies you for a scolarship. Proceed with necessary documentation"
+            message = "Congratulations! "  +   fName.value  +  " your assessment score of "  +  totalPoint  +  " qualifies you for a scolarship. Proceed with necessary documentation."
             messageT.innerHTML = message
             alert(messageT.innerHTML)
             
         }else {
-            message = fName.value   +  " Sorry, your assesment score of "  +  totalPoint  +  " disqualifies you at this time for a scholarship. Do try again next time"
+            message = fName.value   +  " Sorry, your assesment score of "  +  totalPoint  +  " disqualifies you at this time for a scholarship. Do try again next time."
             messageT.innerHTML = message
             alert(messageT.innerHTML)
             
